@@ -179,19 +179,26 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  
 }
 
 .section__text p {
   font-weight: 600;
+   margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .section__text__p1 {
   text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .title {
@@ -297,10 +304,15 @@ section {
   padding: 1.5rem;
   flex: 1;
   background: white;
+    box-shadow: 0px 0px 4px #000;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(53, 53, 53);
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.details-container:hover{
+    background: linear-gradient(#ffffff, #e1e0e2);
 }
 
 .section-container {
@@ -340,13 +352,14 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content:flex-start;
 }
 
 article {
-  display: flex;
+
+ display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 0.5rem;
 }
 
@@ -384,6 +397,7 @@ article .icon {
 /* CONTACT */
 
 #contact {
+    margin-top: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -433,10 +447,23 @@ footer p {
 }
 
 .code-card {
+      animation: 12;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
       border: 1px solid #f5f5f5; /* Add a border */
-      background-color: ghostwhite; /* Add a background color */
+      background-image: url(assets/crum.gif);
+    background-size: cover;/* Add a background color */
       padding: 30px; /* Add padding for spacing */
-      border-radius: 15px; /* Add rounded corners */
     }
+.google-album{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.google-album .btn-color-2{
+    margin-top: 15px;
+  width: 200px;
+    
+}
   
