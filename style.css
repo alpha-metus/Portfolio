@@ -688,5 +688,11 @@ footer p {
     /* Add more styles as needed */
 }
 
+.contra-hire-me-button:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
 
 
