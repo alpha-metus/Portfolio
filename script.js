@@ -1,20 +1,17 @@
-// Toggle Menu
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+document.addEventListener("DOMContentLoaded", function() {
+  // Start typing effect after page is fully loaded
+  setTimeout(type, typingSpeed);
+});
 
-// Typing Effect
 const phrases = ["Graphic Designer", "UI/UX", "@Kreativan"];
 let currentPhrase = 0;
 let currentLetter = 0;
 let deleting = false;
-const typingSpeed = 200;
-const deletingSpeed = 100;
+const typingSpeed = 200; // Adjust for typing speed
+const deletingSpeed = 100; // Adjust for deleting speed
 const dynamicText = document.getElementById("dynamic-text");
-dynamicText.style.fontSize = "20px"; // Ensure this matches your intended font size
+const dynamicText = document.getElementById("dynamic-text");
+dynamicText.style.fontSize = "22px";
 
 function type() {
   let currentText = phrases[currentPhrase];
@@ -23,9 +20,9 @@ function type() {
     currentLetter++;
     if (currentLetter === currentText.length) {
       deleting = true;
-      setTimeout(type, 2000); // Wait a bit before start deleting
+      setTimeout(type, 2000); // Delay before starting to delete
     } else {
-      setTimeout(type, typingSpeed);
+      setTimeout(type, typingSpeed); // Next letter
     }
   } else {
     dynamicText.textContent = currentText.substring(0, currentLetter - 1);
@@ -33,14 +30,9 @@ function type() {
     if (currentLetter === 0) {
       deleting = false;
       currentPhrase = (currentPhrase + 1) % phrases.length; // Move to the next phrase
-      setTimeout(type, deletingSpeed);
+      setTimeout(type, 500); // Delay before typing next phrase
     } else {
-      setTimeout(type, deletingSpeed);
+      setTimeout(type, deletingSpeed); // Delete next letter
     }
   }
 }
-
-// Start typing effect on page load
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(type, typingSpeed);
-});
