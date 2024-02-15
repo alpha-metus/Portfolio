@@ -73,11 +73,13 @@ nav {
 /* Media query for desktop screens */
 @media (min-width: 768px) {
   .dynamic-text-container {
-    font-size: 20px; /* Larger font size for desktop */
-    height: 50px; /* Increased height for desktop */
-    width: 300px; /* Increased width for desktop */
+    font-size: 1.25vw; /* Responsive font size based on viewport width */
+    height: auto; /* Allow container height to adjust based on content */
+    width: 35vw; /* Adjust width based on viewport width */
+    max-width: 600px; /* Set a max-width to prevent overly large sizes */
   }
 }
+
 
 
 /* Ensure the text and cursor are aligned properly */
