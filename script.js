@@ -1,19 +1,20 @@
+// Toggle Menu
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-const dynamicText = document.getElementById("dynamic-text");
-dynamicText.style.fontSize = "small"; // Set the font size to small
 
-const phrases = ["Graphic Designer", "UI/UX" , "@Kreativan"];
+// Typing Effect
+const phrases = ["Graphic Designer", "UI/UX", "@Kreativan"];
 let currentPhrase = 0;
 let currentLetter = 0;
 let deleting = false;
 const typingSpeed = 200;
 const deletingSpeed = 100;
 const dynamicText = document.getElementById("dynamic-text");
+dynamicText.style.fontSize = "small"; // Ensure this matches your intended font size
 
 function type() {
   let currentText = phrases[currentPhrase];
@@ -32,8 +33,10 @@ function type() {
     if (currentLetter === 0) {
       deleting = false;
       currentPhrase = (currentPhrase + 1) % phrases.length; // Move to the next phrase
+      setTimeout(type, deletingSpeed);
+    } else {
+      setTimeout(type, deletingSpeed);
     }
-    setTimeout(type, deletingSpeed);
   }
 }
 
