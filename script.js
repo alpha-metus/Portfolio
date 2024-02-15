@@ -14,7 +14,7 @@ let deleting = false;
 const typingSpeed = 200;
 const deletingSpeed = 100;
 const dynamicText = document.getElementById("dynamic-text");
-dynamicText.style.fontSize = "small"; // Ensure this matches your intended font size
+dynamicText.style.fontSize = "20px"; // Ensure this matches your intended font size
 
 function type() {
   let currentText = phrases[currentPhrase];
