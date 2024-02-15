@@ -4,6 +4,9 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+const dynamicText = document.getElementById("dynamic-text");
+dynamicText.style.fontSize = "small"; // Set the font size to small
+
 const phrases = ["Graphic Designer", "UI/UX" , "@Kreativan"];
 let currentPhrase = 0;
 let currentLetter = 0;
