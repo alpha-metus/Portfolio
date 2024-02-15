@@ -85,7 +85,7 @@ nav {
 /* Media query for desktop screens */
 @media (min-width: 768px) {
   .dynamic-text-container {
-    font-size: 1.25vw; /* Responsive font size based on viewport width */
+    font-size: 1vw; /* Responsive font size based on viewport width */
     height: auto; /* Allow container height to adjust based on content */
     width: 35vw; /* Adjust width based on viewport width */
     max-width: 600px; /* Set a max-width to prevent overly large sizes */
