@@ -47,23 +47,26 @@ nav {
 
 .dynamic-text-container {
   display: inline-block;
-  font-size: 1.25vw; /* or your adjusted value */
-  height: auto; /* Adjusted for content */
-  width: 35vw; /* or your adjusted value */
-  max-width: 600px; /* or your adjusted value */
+  font-size: 1.25vw; /* Adjust as necessary */
+  height: auto;
+  width: 35vw; /* Adjust as necessary */
+  max-width: 600px; /* Adjust as necessary */
   overflow: hidden;
-  white-space: nowrap; /* Keeps the content on one line */
-  vertical-align: middle; /* Aligns the container vertically */
+  white-space: nowrap;
 }
 
-.section__text__p2, .cursor {
+.section__text__p2 {
   display: inline;
-  vertical-align: middle; /* Ensures text and cursor are aligned */
+  line-height: 1; /* Ensures the line height matches the cursor */
+  vertical-align: middle; /* Aligns text vertically */
 }
 
 .cursor {
-  border-left: 0.1em solid;
-  animation: blink-animation 1s steps(1) infinite;
+  display: inline-block;
+  vertical-align: middle; /* Ensures cursor aligns with text */
+  line-height: 1; /* Match the line height with the text */
+  margin-left: 2px; /* Adds a small space between text and cursor */
+  height: 1em; /* Matches the cursor height to the font size */
 }
 
 @keyframes blink-animation {
@@ -71,6 +74,7 @@ nav {
     border-color: transparent;
   }
 }
+
 
 
 /* Media query for desktop screens */
