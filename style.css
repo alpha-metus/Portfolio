@@ -45,6 +45,22 @@ nav {
   font-size: 1.5rem;
 }
 
+.cursor {
+  border-left: 0.1em solid;
+  animation: blink-animation 1s steps(1) infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.dynamic-text-container {
+  display: inline-block;
+}
+
+
 a {
   color: black;
   text-decoration: none;
