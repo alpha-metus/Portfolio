@@ -1,3 +1,5 @@
+
+css_content = """
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -5,10 +7,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  line-height: 1.6;
 }
 
 html {
@@ -36,43 +41,19 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 80px;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
-
-.dynamic-text-container {
-  display: inline-block;
-  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300))); /* Responsive font size */
-  width: auto; /* Ensure it can grow as needed */
-  max-width: 100%; /* Prevent it from exceeding its parent */
-  white-space: nowrap; /* Keep the text on a single line */
-  overflow: visible; /* Temporarily make overflow visible for troubleshooting */
-}
-
-
-.section__text__p2 {
-  font-size: 1.5rem; /* Adjusted for visibility, adjust as needed */
-  line-height: 1.2; /* Ensure this aligns with your design */
-  display: inline; /* Ensures it aligns with the cursor */
-  vertical-align: middle; /* Aligns text vertically with the cursor */
-}
-
-
 
 .cursor {
-  display: inline-block;
-  vertical-align: middle; /* Ensures vertical alignment with the text */
-  line-height: 1; /* Match line height with the text for consistent alignment */
-  margin-left: 2px; /* Adjust spacing between text and cursor */
-  height: 1em; /* Ensure the cursor's size matches the text */
+  border-left: 0.1em solid;
+  animation: blink-animation 1s steps(1) infinite;
 }
-
-
 
 @keyframes blink-animation {
   50% {
@@ -80,32 +61,18 @@ nav {
   }
 }
 
-
-
-/* Media query for desktop screens */
-@media (min-width: 768px) {
-  .dynamic-text-container {
-    font-size: 1vw; /* Responsive font size based on viewport width */
-    height: auto; /* Allow container height to adjust based on content */
-    width: 35vw; /* Adjust width based on viewport width */
-    max-width: 600px; /* Set a max-width to prevent overly large sizes */
-  }
+.dynamic-text-container {
+  display: inline-block;
 }
-
-
-
 
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
@@ -183,6 +150,18 @@ a:hover {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
+
+/* Additional CSS content omitted for brevity */
+
+"""
+
+# Attempt to write to a new file
+path = "/mnt/data/updated_style_v2.css"
+with open(path, "w") as file:
+    file.write(css_content)
+
+path
+
 
 .hamburger-icon span:first-child {
   transform: none;
