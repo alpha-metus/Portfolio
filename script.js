@@ -4,7 +4,7 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-const phrases = ["Graphics Designer"];
+const phrases = ["Graphic Designer", "UI/UX" , "@Kreativan"];
 let currentPhrase = 0;
 let currentLetter = 0;
 let deleting = false;
