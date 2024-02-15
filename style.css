@@ -47,27 +47,27 @@ nav {
 
 .dynamic-text-container {
   display: inline-block;
-  font-size: 1vw; /* Adjust as necessary */
-  height: auto;
-  width: 15vw; /* Adjust as necessary */
-  max-width: 600px; /* Adjust as necessary */
-  overflow: hidden;
-  white-space: nowrap;
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300))); /* Responsive font size */
+  width: auto; /* Adjust based on content width */
+  max-width: 100%; /* Ensures container doesn't exceed its parent's width */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow */
 }
 
 .section__text__p2 {
   display: inline;
-  line-height: 1; /* Ensures the line height matches the cursor */
-  vertical-align: middle; /* Aligns text vertically */
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .cursor {
   display: inline-block;
-  vertical-align: middle; /* Ensures cursor aligns with text */
-  line-height: 1; /* Match the line height with the text */
-  margin-left: 2px; /* Adds a small space between text and cursor */
-  height: 1em; /* Matches the cursor height to the font size */
+  vertical-align: middle;
+  line-height: 1;
+  margin-left: 2px; /* Space between text and cursor */
+  height: 1em; /* Align height with text */
 }
+
 
 @keyframes blink-animation {
   50% {
