@@ -54,11 +54,12 @@ nav {
   overflow: hidden; /* Hide overflow */
 }
 
-.section__text__p2 {
-  display: inline;
-  line-height: 1;
+.section__text__p2, .cursor {
+  display: inline-block;
   vertical-align: middle;
+  line-height: normal;
 }
+
 
 .cursor {
   display: inline-block;
