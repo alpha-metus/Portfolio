@@ -90,13 +90,6 @@ nav {
 
 
 
-/* Ensure the text and cursor are aligned properly */
-.section__text__p2, .cursor {
-  display: inline-block;
-  vertical-align: top;
-}
-
-
 
 a {
   color: black;
