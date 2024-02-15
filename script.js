@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(type, typingSpeed);
 });
 
-const phrases = ["Graphic Designer", "UI/UX", "@Kreativan"];
+const phrases = ["Graphic Designer", "UI/UX", "@Kreativan Technologies"];
 let currentPhrase = 0;
 let currentLetter = 0;
 let deleting = false;
@@ -11,7 +11,7 @@ const typingSpeed = 200; // Adjust for typing speed
 const deletingSpeed = 100; // Adjust for deleting speed
 const dynamicText = document.getElementById("dynamic-text");
 const dynamicText = document.getElementById("dynamic-text");
-dynamicText.style.fontSize = "22px";
+dynamicText.style.fontSize = "25px";
 
 function type() {
   let currentText = phrases[currentPhrase];
