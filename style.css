@@ -56,7 +56,7 @@ nav {
 
 
 .section__text__p2 {
-  font-size: 2.5rem; /* Adjusted for visibility, adjust as needed */
+  font-size: 1.5rem; /* Adjusted for visibility, adjust as needed */
   line-height: 1.2; /* Ensure this aligns with your design */
   display: inline; /* Ensures it aligns with the cursor */
   vertical-align: middle; /* Aligns text vertically with the cursor */
