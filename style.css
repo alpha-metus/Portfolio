@@ -47,11 +47,18 @@ nav {
 
 .dynamic-text-container {
   display: inline-block;
-  font-size: 16px; /* Default font size for mobile */
-  height: 40px; /* Default height for mobile */
-  width: 250px; /* Default width for mobile */
+  font-size: 1.25vw; /* or your adjusted value */
+  height: auto; /* Adjusted for content */
+  width: 35vw; /* or your adjusted value */
+  max-width: 600px; /* or your adjusted value */
   overflow: hidden;
-  white-space: nowrap; /* Prevents the text from wrapping */
+  white-space: nowrap; /* Keeps the content on one line */
+  vertical-align: middle; /* Aligns the container vertically */
+}
+
+.section__text__p2, .cursor {
+  display: inline;
+  vertical-align: middle; /* Ensures text and cursor are aligned */
 }
 
 .cursor {
@@ -65,10 +72,6 @@ nav {
   }
 }
 
-.section__text__p2, .cursor {
-  display: inline-block;
-  vertical-align: top;
-}
 
 /* Media query for desktop screens */
 @media (min-width: 768px) {
