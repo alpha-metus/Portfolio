@@ -48,26 +48,30 @@ nav {
 .dynamic-text-container {
   display: inline-block;
   font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300))); /* Responsive font size */
-  width: auto; /* Adjust based on content width */
-  max-width: 100%; /* Ensures container doesn't exceed its parent's width */
-  white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden; /* Hide overflow */
+  width: auto; /* Ensure it can grow as needed */
+  max-width: 100%; /* Prevent it from exceeding its parent */
+  white-space: nowrap; /* Keep the text on a single line */
+  overflow: visible; /* Temporarily make overflow visible for troubleshooting */
 }
 
-.section__text__p2, .cursor {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+
+.section__text__p2 {
+  font-size: 2.5rem; /* Adjusted for visibility, adjust as needed */
+  line-height: 1.2; /* Ensure this aligns with your design */
+  display: inline; /* Ensures it aligns with the cursor */
+  vertical-align: middle; /* Aligns text vertically with the cursor */
 }
+
 
 
 .cursor {
   display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
-  margin-left: 2px; /* Space between text and cursor */
-  height: 1em; /* Align height with text */
+  vertical-align: middle; /* Ensures vertical alignment with the text */
+  line-height: 1; /* Match line height with the text for consistent alignment */
+  margin-left: 2px; /* Adjust spacing between text and cursor */
+  height: 1em; /* Ensure the cursor's size matches the text */
 }
+
 
 
 @keyframes blink-animation {
