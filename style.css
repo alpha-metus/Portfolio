@@ -731,7 +731,7 @@ footer p {
 .card {
   flex: 0 0 auto;
   width: 300px; /* Adjust as needed */
-  height: 350px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
   border-radius: 15px;
   margin: 10px;
   overflow: hidden;
