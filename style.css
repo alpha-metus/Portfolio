@@ -703,3 +703,70 @@ footer p {
   right: 0;
   width: 100%;
 }
+
+
+
+.video-section {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video-heading {
+    
+  font-weight: bold;
+    font-size: 50px;
+}
+
+.carousel-container {
+    padding-top: 50px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.carousel {
+  display: flex;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust as needed */
+  height: 350px; /* Adjust as needed */
+  border-radius: 15px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smoother scaling and shadow */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover */
+}
+
+.card iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    opacity: 1; /* Ensure the text is fully visible */
+    animation: breathing 3s infinite ease-in-out; /* Breathing animation */
+}
+
+@keyframes breathing {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+
+
