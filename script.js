@@ -7,7 +7,7 @@ function toggleMenu() {
 }
 
 // Typing Effect
-const phrases = ["Graphic Designer", "UI/UX", "@Kreativan Technologies"];
+const phrases = ["Brand Designer", "UI/UX", "@NOON"];
 let currentPhrase = 0;
 let currentLetter = 0;
 let deleting = false;
